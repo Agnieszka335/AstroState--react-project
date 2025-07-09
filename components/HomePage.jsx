@@ -1,14 +1,12 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import "../styles/_main.scss";
 
 function HomePage() {
 
-
   return (
     <header>
+       <h1>AstroState</h1>
       <nav>
-        <div>Logo</div>
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/horoscope">Daily Horoscope</NavLink></li>

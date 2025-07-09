@@ -6,6 +6,7 @@ import Compatibility from "./Compatibility";
 import AboutZodiac from "./AboutZodiac";
 import PageNotFound from "./PageNotFound";
 
+
 export default function App() {
   return (
     <Router>

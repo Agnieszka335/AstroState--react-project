@@ -1,0 +1,19 @@
+body {
+  font-family: $main-font;
+  font-size: 40px;
+  background-color: #e2d6b7;
+}
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: $main-padding;
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("../assets/10419153.jpg");
+  background-repeat: repeat-y;
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 5px 5px 15px 10px #8e846b;
+}
