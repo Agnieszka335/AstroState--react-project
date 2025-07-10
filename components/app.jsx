@@ -5,7 +5,7 @@ import DailyHoroscope from "./DailyHoroscope";
 import Compatibility from "./Compatibility";
 import AboutZodiac from "./AboutZodiac";
 import PageNotFound from "./PageNotFound";
-import HomePage from "./Home";
+import HomePage from "./HomePage";
 
 export default function App() {
   return (
@@ -13,9 +13,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigation />}>
         <Route path="home" element={<HomePage />} />
-        <Route path="/horoscope" element={<DailyHoroscope />} />
-        <Route path="/compatibility" element={<Compatibility />} />
-        <Route path="/signs" element={<AboutZodiac />} />
+        <Route path="horoscope" element={<DailyHoroscope />} />
+        <Route path="compatibility" element={<Compatibility />} />
+        <Route path="signs" element={<AboutZodiac />} />
         <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

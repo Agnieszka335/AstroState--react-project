@@ -9,4 +9,7 @@ background: #63574e;
 background: linear-gradient(40deg, rgba(99, 87, 78, 1) 2%, rgba(189, 179, 160, 1) 46%, rgba(204, 196, 184, 1) 78%);
   height: 100vh;
 }
-
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}

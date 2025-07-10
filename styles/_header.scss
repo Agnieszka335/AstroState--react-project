@@ -1,16 +1,19 @@
 header {
-  width: 100%;
+  max-width: 100%;
   padding: $main-padding;
   height: 100px;
   background-image: url("../assets/10419153.jpg");
-  background-position: 40% 50%;
+  background-position: 0% 43%;
   background-size: cover;
   box-shadow: 5px 5px 15px 10px #8e846b;
 
   .inner-header {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 25px;
+    font-weight: 600;
     padding: 5px 10px;
     border-radius: 25px;
 
@@ -27,7 +30,7 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: #000;
+   color: $main-font-color;
 }
 
 .navigation-list {
