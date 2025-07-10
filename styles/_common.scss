@@ -1,19 +1,12 @@
-body {
-  font-family: $main-font;
-  font-size: 40px;
-  background-color: #e2d6b7;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .page-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: $main-padding;
-  display: flex;
-  min-height: 100vh;
-  box-sizing: border-box;
-  background-image: url("../assets/10419153.jpg");
-  background-repeat: repeat-y;
-  background-position: 50% 50%;
-  background-size: cover;
-  box-shadow: 5px 5px 15px 10px #8e846b;
+  font-family: $main-font;
+background: #63574e;
+background: linear-gradient(40deg, rgba(99, 87, 78, 1) 2%, rgba(189, 179, 160, 1) 46%, rgba(204, 196, 184, 1) 78%);
+  height: 100vh;
 }
+
