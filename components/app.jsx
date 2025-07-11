@@ -12,7 +12,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Navigation />}>
-        <Route path="home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="horoscope" element={<DailyHoroscope />} />
         <Route path="compatibility" element={<Compatibility />} />
         <Route path="signs" element={<AboutZodiac />} />
