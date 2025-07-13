@@ -1,15 +1,27 @@
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-container {
   font-family: $main-font;
 background: #63574e;
 background: linear-gradient(40deg, rgba(99, 87, 78, 1) 2%, rgba(189, 179, 160, 1) 46%, rgba(204, 196, 184, 1) 78%);
-  height: 100vh;
+  height: 100%;
+
 }
 .container {
-  max-width: 1200px;
-  padding: 0 15px;
+ max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: $main-padding;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,12 +1,12 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "../styles/_main.scss";
-import HomePage from "./HomePage";
+import Footer from "./Footer";
 
 
 function Navigation() {
 
   return (
-    <>
+    <section className="layout">
     <header className="header">
       <div className="inner-header">
        <NavLink to="/" className="logo nav-link">
@@ -23,8 +23,13 @@ function Navigation() {
       </nav>
       </div>
       </header>
-      <Outlet />
-</>
+
+      <main className="main-content">
+        <Outlet />
+      </main>
+      
+      <Footer />
+</section>
   );
 }
 

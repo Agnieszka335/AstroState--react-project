@@ -1,11 +1,10 @@
 header {
-  max-width: 100%;
-  padding: $main-padding;
-  height: 100px;
-  background-image: url("../assets/10419153.jpg");
-  background-position: 0% 43%;
-  background-size: cover;
-  box-shadow: 5px 5px 15px 10px #8e846b;
+    @include backgroundImage {
+    padding: $main-padding;
+    height: 100px;
+    background-position: 0% 43%;
+}
+
 
   .inner-header {
     max-width: 1200px;

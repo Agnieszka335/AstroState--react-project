@@ -3,7 +3,11 @@ function DailyHoroscope() {
   const userName = localStorage.getItem("userName");
 
   return (
-    <h3>{userName}</h3>
+    <section className="daily">
+    <div className="container">
+    <h3>Hello, {userName}, choose your zodiac sign</h3>
+    </div>
+    </section>
   )
 }
 
