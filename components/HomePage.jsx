@@ -20,7 +20,7 @@ function HomePage() {
 
     return (
         <div className="container">
-     <h2>Welcome to AstroState!</h2>
+     <h2 className="homepage-header">Welcome to AstroState</h2>
      <div>Your personalized daily horoscopes, compatibility meter, and zodiac wisdom — all in one place. </div>
      <span>Let's see what the universe has in store for you today!</span>
      <label>Enter your name</label>

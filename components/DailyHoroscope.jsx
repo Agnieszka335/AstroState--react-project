@@ -10,7 +10,7 @@ function DailyHoroscope() {
     if (!sign) return;
 
     fetch(`https://aztro.sameerkumar.website/?sign=${sign}&day=today`, {
-      method: "POST",
+      method: "POST"
     })
       .then((response) => {
         if (response.ok) {
@@ -50,8 +50,12 @@ function DailyHoroscope() {
           <option value="aquarius">Aquarius</option>
           <option value="pisces">Pisces</option>
         </select>
+
+       
+      
       </div>
     </section>
+
   );
 }
 

@@ -1,16 +1,15 @@
-
 .footer {
-    @include backgroundImage {
+  @include backgroundImage {
     background-position: 0% 20%;
     display: flex;
     flex-shrink: 0;
     justify-content: flex-end;
     padding: 10px;
-    }
-
+  }
 
   p {
     padding: 0 10px;
-    font-weight: 400;
+    font-weight: 500;
+    color: $main-font-color;
   }
 }
