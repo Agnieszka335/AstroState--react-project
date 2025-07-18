@@ -55,7 +55,6 @@ function DailyHoroscope() {
       
       </div>
     </section>
-
   );
 }
 
