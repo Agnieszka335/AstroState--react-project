@@ -26,5 +26,22 @@ background: linear-gradient(40deg, rgba(99, 87, 78, 1) 2%, rgba(189, 179, 160, 1
   align-items: center;
 }
 
+//inputs
+.primary-input {
+ padding: 10px;
+background-color: $alt-font-color;
+border: 0;
+border-radius: 10px;
+font-size: 18px;
+}
 
-
+.primary-button {
+ padding: 10px;
+  border-radius: 20px;
+  border: 2px solid $alt-font-color;
+background-color: $accent-color;
+color: $main-font-color;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 700;
+}

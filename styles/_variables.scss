@@ -2,6 +2,7 @@ $main-font: 'Ubuntu', sans-serif;
 $main-padding: 2rem;
 $main-font-color: #585141;
 $alt-font-color: #f5f2e7;
+$accent-color: #CBC3E3;
 $main-font-size: 18px;
 
 @mixin backgroundImage {
@@ -11,3 +12,4 @@ $main-font-size: 18px;
   box-shadow: 5px 5px 15px 10px #8e846b;
   @content;
 }
+

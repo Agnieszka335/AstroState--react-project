@@ -9,9 +9,7 @@ function DailyHoroscope() {
   useEffect(() => {
     if (!sign) return;
 
-    fetch(`https://aztro.sameerkumar.website/?sign=${sign}&day=today`, {
-      method: "POST"
-    })
+    fetch('https://horoscope-app-api.vercel.app/')
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -33,9 +31,10 @@ function DailyHoroscope() {
   return (
     <section className="daily">
       <div className="container">
-        <h3>Hello, {userName}, choose your zodiac sign</h3>
+        <h3 className="horoscope-header">Hello, {userName}, choose your zodiac sign</h3>
 
-        <select value={sign} onChange={handleSignChange}>
+<section className="horoscope-main">
+        <select value={sign} onChange={handleSignChange} className="horoscope-select primary-button">
           <option value="">Choose your sign</option>
           <option value="taurus">Taurus</option>
           <option value="aries">Aries</option>
@@ -51,8 +50,13 @@ function DailyHoroscope() {
           <option value="pisces">Pisces</option>
         </select>
 
-       
-      
+        <article className="horoscope-results">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente delectus repudiandae molestiae adipisci quos quo magni facere provident temporibus voluptate esse, dolores, blanditiis incidunt. Natus consectetur ut illum quaerat.
+    </div>
+        </article>
+        </section>
+
       </div>
     </section>
   );

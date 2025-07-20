@@ -10,7 +10,7 @@ function Navigation() {
     <header className="header">
       <div className="inner-header">
        <NavLink to="/" className="logo nav-link">
-        <img src="../assets/logo.png" />    
+        <img src="../assets/logo.png" alt="logo" />    
             <h1>AstroState</h1>
         </NavLink>
       <nav>
