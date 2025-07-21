@@ -30,7 +30,7 @@ function DailyHoroscope() {
 
   return (
     <section className="daily">
-      <div className="container">
+      <div className="container start-animation">
         <h3 className="horoscope-header">Hello, {userName}, choose your zodiac sign</h3>
 
 <section className="horoscope-main">
@@ -51,6 +51,7 @@ function DailyHoroscope() {
         </select>
 
         <article className="horoscope-results">
+          {!horoscope && <p>Loading...</p>}
     <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente delectus repudiandae molestiae adipisci quos quo magni facere provident temporibus voluptate esse, dolores, blanditiis incidunt. Natus consectetur ut illum quaerat.
     </div>

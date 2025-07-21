@@ -1,0 +1,41 @@
+.comp-article {
+    display: flex;
+    gap: 60px;
+    padding: 22px;
+}
+
+.comp-description {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 25px;
+  color: $alt-font-color;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.751);
+}
+
+.comp-zodiac span {
+font-size: 20px;
+
+}
+.comp-select {
+    margin: 15px;
+    background-color:#cbc3e3d8;
+}
+
+.comp-result {
+ background-color: #f5f2e764;
+ border-radius: 30px;
+ padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+  p {
+    font-size: 25px;
+    padding: 5px 0;
+  }
+}
