@@ -11,13 +11,16 @@
   text-transform: uppercase;
   line-height: 25px;
   color: $alt-font-color;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.751);
+text-shadow: $main-text-shadow;
 }
 
 .comp-zodiac span {
 font-size: 20px;
+color: rgba(92, 79, 79, 0.989);
+font-weight: 600;
 
 }
+
 .comp-select {
     margin: 15px;
     background-color:#cbc3e3d8;
@@ -38,4 +41,11 @@ h2 {
     font-size: 25px;
     padding: 5px 0;
   }
+}
+
+.fa-scale-balanced {
+  font-size: 60px;
+  color: $alt-font-color;
+text-shadow: $main-text-shadow;
+margin-bottom: 10px;
 }

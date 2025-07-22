@@ -1,0 +1,13 @@
+.zodiac-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sign-img {
+    border-radius: 50%;
+    border: 2px solid $main-font-color;
+   box-shadow: $main-text-shadow;
+}
+
+

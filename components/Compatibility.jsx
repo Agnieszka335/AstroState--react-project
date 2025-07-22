@@ -1,4 +1,4 @@
-import zodiacCompatibility from "../compData/zodiacCompatibility";
+import zodiacCompatibility from "../data/zodiacCompatibility";
 import { useState } from "react";
 
 
@@ -28,6 +28,7 @@ setSign2(e.target.value);
     return (
    <section className="compatibility">
     <div className="container start-animation">
+      <i class="fa-solid fa-scale-balanced"></i>
         <div className="comp-description">Unlock the secrets of the stars ✨
           <br/> Select two zodiac signs and explore the romantic energy between them.</div>
         <article className="comp-article">
