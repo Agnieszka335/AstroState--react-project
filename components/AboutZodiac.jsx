@@ -2,9 +2,17 @@ import zodiacData from "../data/zodiacData";
 import { useState } from "react";
 
 function AboutZodiac() {
+  const [visible, setVisible] = useState(false);
 
+  const toggleVisibity = (sign) => {
+    if (sign === visible) {
+      setVisible(false);
+    } else {
+      setVisible(sign);
+    }
+  };
 
-    return (
+  return (
     <div className="container zodiac-flex start-animation">
       {zodiacData.map((sign) => (
         <div className="sign-container" key={sign.name}>
@@ -12,11 +20,19 @@ function AboutZodiac() {
           <h4 className="sign-header">{sign.name}</h4>
           <div className="sign-date">{sign.date}</div>
 
-          <div className="sign-description">{sign.description}</div>
+          <button className="primary-button small-btn"onClick={() => toggleVisibity(sign.name)}>
+            {visible === sign.name ? "Hide description" : "Show description"}
+          </button>
+
+          {visible === sign.name && (
+            <div className="sign-description start-animation">
+              {sign.description}
+            </div>
+          )}
         </div>
       ))}
     </div>
-    )
+  );
 }
 
 export default AboutZodiac;

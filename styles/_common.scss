@@ -49,20 +49,31 @@ color: $main-font-color;
 font-size: 18px;
 letter-spacing: 1px;
 font-weight: 700;
+ transition: transform 1s ease;
+
+   &:hover {
+    background-color: #B0A5D8;
+    box-shadow: $main-text-shadow;
+
+    &:focus {
+      border: 0;
+    }
+ }
 }
 
 //animacja wejścia
-.start-animation {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fade 0.7s ease-out forwards;
-}
 
 @keyframes fade {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.start-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade 0.7s ease-out forwards;
 }
 
 .not-found {
