@@ -12,9 +12,7 @@ function DailyHoroscope() {
     setIsLoading(true);
 
     fetch(`https://api.api-ninjas.com/v1/horoscope?zodiac=${sign}`, {
-      headers: {
-        "X-Api-Key": "iYRAa3fjBQEpEVqhUiW1mA==LJK4SrsS54lx2TTW",
-      },
+      
     })
       .then((response) => {
         if (response.ok) {
