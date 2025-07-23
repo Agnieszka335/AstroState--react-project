@@ -1,20 +1,57 @@
-
 .horoscope-header {
-      font-weight: 600;
+  font-weight: 600;
   font-size: 25px;
-  color: #ffffff;
   text-transform: uppercase;
-  line-height: 100px;
   color: $alt-font-color;
-text-shadow: $main-text-shadow;
+  text-shadow: $main-text-shadow;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .horoscope-main {
-    display: flex;
-    flex-direction: row;
+  margin: 15px;
+  padding: 30px;
+  background-color: #f5f2e717;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 1px 12px 13px #0000004d;
 
-    .horoscope-results {
-        width: 100%;
-    }
+  & select {
+    width: 200px;
+    height: 50px;
+    align-items: center;
+  }
+
+  .horoscope-results {
+    padding-left: 10px;
+    font-size: 24px;
+    color: $alt-font-color;
+    text-shadow: $main-text-shadow;
+  }
 }
 
+.horo-api {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.horoscope-date,
+.horoscope-sign {
+  font-size: 22px;
+  font-weight: 500;
+  color: $alt-font-color;
+}
+
+.horoscope-description {
+  font-size: 22px;
+  line-height: 1.6;
+  color: $alt-font-color;
+  text-shadow: $main-text-shadow;
+}
