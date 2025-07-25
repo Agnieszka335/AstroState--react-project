@@ -10,13 +10,18 @@
 
 .page-container {
   font-family: $main-font;
-background: #63574e;
-background: linear-gradient(40deg, rgba(99, 87, 78, 1) 2%, rgba(189, 179, 160, 1) 46%, rgba(204, 196, 184, 1) 78%);
+  background: #63574e;
+  background: linear-gradient(
+    40deg,
+    rgba(99, 87, 78, 1) 2%,
+    rgba(189, 179, 160, 1) 46%,
+    rgba(204, 196, 184, 1) 78%
+  );
   height: 100%;
-
 }
+
 .container {
- max-width: 1200px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: $main-padding;
@@ -24,43 +29,51 @@ background: linear-gradient(40deg, rgba(99, 87, 78, 1) 2%, rgba(189, 179, 160, 1
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-select, button {
+select,
+button {
   font-family: $main-font;
 }
 
 //inputs
 .primary-input {
- padding: 10px;
-background-color: $alt-font-color;
-border: 0;
-border-radius: 10px;
-font-size: 18px;
-cursor: pointer;
+  padding: 10px;
+  background-color: $alt-font-color;
+  border: 0;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    width: 100%;
+  }
 }
 
 .primary-button {
- padding: 10px;
+  padding: 10px;
   border-radius: 20px;
   border: 1px solid $main-font-color;
-background-color: $accent-color;
-color: $main-font-color;
-font-size: 18px;
-letter-spacing: 1px;
-font-weight: 700;
- transition: transform 1s ease;
- cursor: pointer;
+  background-color: $accent-color;
+  color: $main-font-color;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: transform 1s ease;
+  cursor: pointer;
 
-   &:hover {
-    background-color: #B0A5D8;
+  &:hover {
+    background-color: #b0a5d8;
     box-shadow: $main-text-shadow;
 
     &:focus {
       border: 0;
     }
- }
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    width: 100%;
+  }
 }
 
 //animacja wejścia

@@ -18,6 +18,11 @@ text-shadow: $main-text-shadow;
   line-height: 100px;
   color: $alt-font-color;
 text-shadow: $main-text-shadow;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    font-size: 2em;
+    line-height: 70px;
+  }
 }
 
 .homepage-text {
@@ -41,5 +46,4 @@ text-shadow: $main-text-shadow;
   display: flex;
   flex-direction: column;
   gap: 15px;
-width: 30%;
 }

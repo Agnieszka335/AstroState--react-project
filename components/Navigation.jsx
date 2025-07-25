@@ -17,9 +17,12 @@ function Navigation() {
         <ul className="navigation-list">
           <li><NavLink to="/" className="nav-link">Home</NavLink></li>
           <li><NavLink to="/horoscope" className="nav-link">Daily Horoscope</NavLink></li>
-          <li><NavLink to="/compatibility" className="nav-link">Compatiblity</NavLink></li>
+          <li><NavLink to="/compatibility" className="nav-link">Compatibility</NavLink></li>
           <li><NavLink to="/signs" className="nav-link">About Signs</NavLink></li>
         </ul>
+        <button className="nav-burger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
       </div>
       </header>
