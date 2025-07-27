@@ -1,6 +1,6 @@
 .horoscope-header {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.39rem;
   text-transform: uppercase;
   color: $alt-font-color;
   text-shadow: $main-text-shadow;
@@ -10,8 +10,8 @@
 
 .horoscope-main {
   margin: 15px;
-  padding: 30px;
-  background-color: #f5f2e717;
+  padding: 40px;
+ background: rgba(255, 255, 255, 0.15);
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -24,11 +24,12 @@
     width: 200px;
     height: 50px;
     align-items: center;
+
   }
 
   .horoscope-results {
     padding-left: 10px;
-    font-size: 24px;
+    font-size: 1.33rem;
     color: $alt-font-color;
     text-shadow: $main-text-shadow;
   }
@@ -44,13 +45,13 @@
 
 .horoscope-date,
 .horoscope-sign {
-  font-size: 22px;
+  font-size: 1.22rem;
   font-weight: 500;
   color: $alt-font-color;
 }
 
 .horoscope-description {
-  font-size: 22px;
+  font-size: 1.22rem;
   line-height: 1.6;
   color: $alt-font-color;
   text-shadow: $main-text-shadow;

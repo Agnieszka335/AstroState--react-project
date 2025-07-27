@@ -6,7 +6,7 @@
 
 .comp-description {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.11rem;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 25px;
@@ -16,10 +16,9 @@ letter-spacing: 1px;
 }
 
 .comp-zodiac span {
-font-size: 20px;
+font-size: 1.11rem;
 color: rgba(92, 79, 79, 0.989);
 font-weight: 600;
-
 }
 
 .comp-select {
@@ -28,24 +27,24 @@ font-weight: 600;
 }
 
 .comp-result {
- background-color: #f5f2e764;
  border-radius: 30px;
  padding: 40px;
+ background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 
 h2 {
-    font-size: 35px;
+    font-size: 1.94rem;
     padding-bottom: 15px;
 }
   p {
-    font-size: 25px;
+    font-size: 1.38rem;
     padding: 5px 0;
   }
 }
 
 .fa-scale-balanced {
-  font-size: 60px;
+  font-size: 3.33rem;
   color: $alt-font-color;
 text-shadow: $main-text-shadow;
 margin-bottom: 10px;

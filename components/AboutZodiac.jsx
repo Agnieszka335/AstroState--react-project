@@ -4,7 +4,7 @@ import { useState } from "react";
 function AboutZodiac() {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisibity = (sign) => {
+  const toggleVisibility = (sign) => {
     if (sign === visible) {
       setVisible(false);
     } else {
@@ -20,7 +20,7 @@ function AboutZodiac() {
           <h4 className="sign-header">{sign.name}</h4>
           <div className="sign-date">{sign.date}</div>
 
-          <button className="primary-button small-btn"onClick={() => toggleVisibity(sign.name)}>
+          <button className="primary-button small-btn" onClick={() => toggleVisibility(sign.name)}>
             {visible === sign.name ? "Hide description" : "Show description"}
           </button>
 

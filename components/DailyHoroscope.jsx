@@ -12,7 +12,6 @@ function DailyHoroscope() {
     setIsLoading(true);
 
     fetch(`https://api.api-ninjas.com/v1/horoscope?zodiac=${sign}`, {
-      
     })
       .then((response) => {
         if (response.ok) {

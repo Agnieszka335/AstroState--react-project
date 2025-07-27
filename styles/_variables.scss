@@ -3,7 +3,7 @@ $main-padding: 2rem;
 $main-font-color: #585141;
 $alt-font-color: #f5f2e7;
 $accent-color: #CBC3E3;
-$main-font-size: 18px;
+$main-font-size: 1.125rem;
 $main-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.751);
 
 @mixin backgroundImage {
@@ -16,4 +16,3 @@ $main-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.751);
 
 $breakpoint-small: 570px;
 $breakpoint-medium: 980px;
-

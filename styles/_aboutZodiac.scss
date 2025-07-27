@@ -7,7 +7,7 @@
 }
 
 .sign-header {
-  font-size: 20px;
+  font-size: 1.11rem;
   padding: 5px;
   font-weight: 500;
   color: rgb(46, 44, 44);
@@ -24,7 +24,7 @@
 }
 
 .sign-container {
- padding: 10px; //zmieniło rozstaw!
+ padding: 10px;
  max-width: 300px;
  background-color: $alt-font-color;
   border-radius: 20px;
@@ -38,8 +38,8 @@
 }
 
 .small-btn {
- font-size: 12px;
- box-shadow: $main-text-shadow;
+ font-size: 0.75rem;
+  box-shadow: $main-text-shadow;
  padding: 10px;
  margin: 5px;
 }
