@@ -87,15 +87,17 @@ button {
 //animacje
 
 @keyframes fade {
-  to {
+from {
+ opacity: 0;
+ transform: translateY(30px);
+}
+ to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 .start-animation {
-  opacity: 0;
-  transform: translateY(30px);
   animation: fade 0.7s ease-out forwards;
 }
 

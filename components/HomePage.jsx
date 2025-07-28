@@ -20,7 +20,7 @@ function HomePage() {
 
     return (
         <div className="container start-animation">
-            <i class="fa-regular fa-star"></i>
+            <i className="fa-regular fa-star"></i>
      <h2 className="homepage-header">Welcome to AstroState</h2>
      <div className="homepage-text">
         Your personalized daily horoscopes, compatibility meter, and zodiac wisdom — all in one place. <br/>

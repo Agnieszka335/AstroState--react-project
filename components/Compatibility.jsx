@@ -12,8 +12,8 @@ function Compatibility() {
 ];
 
 
-const [sign1, setSign1] = useState(null);
-const [sign2, setSign2] = useState(null);
+const [sign1, setSign1] = useState("");
+const [sign2, setSign2] = useState("");
 
 const data = sign1 && sign2 && zodiacCompatibility[sign1][sign2];
 
@@ -28,7 +28,7 @@ setSign2(e.target.value);
     return (
    <section className="compatibility">
     <div className="container start-animation">
-      <i class="fa-solid fa-scale-balanced"></i>
+      <i className="fa-solid fa-scale-balanced"></i>
         <div className="comp-description">Unlock the secrets of the stars ✨
           <br/> Select two zodiac signs and explore the romantic energy between them.</div>
         <article className="comp-article">
