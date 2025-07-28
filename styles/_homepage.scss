@@ -1,12 +1,16 @@
 .main-content {
   flex: 1;
   padding: $main-padding;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    padding: 15px 5px;
+  }
 }
 
- .fa-star {
+.fa-star {
   color: $alt-font-color;
-font-size: 2.5rem;
-text-shadow: $main-text-shadow;
+  font-size: 2.5rem;
+  text-shadow: $main-text-shadow;
 }
 
 .homepage-header {
@@ -15,13 +19,22 @@ text-shadow: $main-text-shadow;
   color: #ffffff;
   text-transform: uppercase;
   padding: 15px;
-  line-height: 100px;
+  line-height: 2em;
   color: $alt-font-color;
-text-shadow: $main-text-shadow;
+  text-shadow: $main-text-shadow;
+
+  &:hover {
+    transition: all 0.4s ease-in-out;
+    color: $accent-color;
+    text-shadow: 2px 4px 8px #373735;
+  }
 
   @media screen and (max-width: $breakpoint-medium) {
     font-size: 2em;
-    line-height: 70px;
+    line-height: 1.5em;
+  }
+  @media screen and (min-width: $breakpoint-big) {
+    font-size: 4em;
   }
 }
 
@@ -30,16 +43,26 @@ text-shadow: $main-text-shadow;
   padding: 15px;
   font-size: 1.11rem;
   margin-bottom: 20px;
- font-size: 20px;
- text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 
-& + label {
-  color: #f5f4f1;
-  padding: 15px;
-  font-size: $main-font-size;
- font-size: 20px;
- text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
+  & + label {
+    color: #f5f4f1;
+    padding: 15px;
+    font-size: $main-font-size;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      color: #e6e1f7;
+    }
+    @media screen and (min-width: $breakpoint-big) {
+      font-size: 2em;
+    }
+  }
+  @media screen and (min-width: $breakpoint-big) {
+    font-size: 2em;
+  }
 }
 
 .homepage-form {

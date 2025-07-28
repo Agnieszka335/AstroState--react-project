@@ -12,4 +12,8 @@
     font-weight: 500;
     color: $main-font-color;
   }
+
+   @media screen and (max-width: $breakpoint-medium) {
+    font-size: 0.8em;
+  }
 }

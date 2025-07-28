@@ -6,6 +6,10 @@
   text-shadow: $main-text-shadow;
   letter-spacing: 1px;
   margin-bottom: 10px;
+
+   @media screen and (min-width: $breakpoint-big) {
+   font-size: 2em;
+  }
 }
 
 .horoscope-main {
@@ -25,6 +29,14 @@
     height: 50px;
     align-items: center;
 
+      @media screen and (max-width: $breakpoint-medium) {
+    margin: 10px 0;
+  }
+   @media screen and (min-width: $breakpoint-big) {
+   font-size: 1.8em;
+ height: 100%;
+ width: 300px;
+  }
   }
 
   .horoscope-results {
@@ -32,6 +44,11 @@
     font-size: 1.33rem;
     color: $alt-font-color;
     text-shadow: $main-text-shadow;
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    flex-direction: column;
+    padding: 15px 5px;
   }
 }
 
@@ -41,6 +58,7 @@
   flex-direction: column;
   gap: 20px;
   max-width: 500px;
+
 }
 
 .horoscope-date,
@@ -48,6 +66,14 @@
   font-size: 1.22rem;
   font-weight: 500;
   color: $alt-font-color;
+
+    @media screen and (min-width: $breakpoint-big) {
+   font-size: 1.8em;
+  }
+}
+
+.horoscope-date:hover {
+ color:#e6e1f7;
 }
 
 .horoscope-description {
@@ -55,4 +81,8 @@
   line-height: 1.6;
   color: $alt-font-color;
   text-shadow: $main-text-shadow;
+
+    @media screen and (min-width: $breakpoint-big) {
+   font-size: 1.5em;
+  }
 }

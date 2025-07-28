@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .layout {
   display: flex;
   flex-direction: column;
@@ -34,7 +33,6 @@
     padding: 15px 15px;
     font-size: 1em;
   }
-
 }
 
 select,
@@ -44,7 +42,7 @@ button {
 
 //inputs
 .primary-input {
-  padding: 10px;
+  padding: 8px 12px;
   background-color: $alt-font-color;
   border: 0;
   border-radius: 10px;
@@ -54,7 +52,10 @@ button {
   @media screen and (max-width: $breakpoint-medium) {
     width: 100%;
   }
-
+  @media screen and (min-width: $breakpoint-big) {
+    width: 400px;
+    height: 50px;
+  }
 }
 
 .primary-button {
@@ -81,7 +82,7 @@ button {
   @media screen and (max-width: $breakpoint-medium) {
     width: 100%;
   }
-
+ 
 }
 
 //animacje
