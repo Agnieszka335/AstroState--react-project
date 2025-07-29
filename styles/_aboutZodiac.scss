@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-
 }
 
 .sign-header {
@@ -13,8 +12,8 @@
   font-weight: 500;
   color: rgb(46, 44, 44);
 
-          @media screen and (min-width: $breakpoint-big) {
- font-size: 2em;
+  @media screen and (min-width: $breakpoint-big) {
+    font-size: 2em;
   }
 }
 

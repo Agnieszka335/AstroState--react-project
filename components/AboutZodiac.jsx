@@ -1,6 +1,7 @@
 import zodiacData from "../data/zodiacData";
 import { useState } from "react";
 
+
 function AboutZodiac() {
   const [visible, setVisible] = useState(false);
 

@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import "../styles/_main.scss";
+import logo from "../assets/logo.png";
 import Footer from "./Footer";
 
 
@@ -17,7 +18,7 @@ const toggleMenu = () => {
     <header className="header">
       <div className="inner-header">
        <NavLink to="/" className="logo nav-link">
-        <img src="../assets/logo.png" alt="logo" />    
+        <img src={logo} alt="logo" />    
             <h1>AstroState</h1>
         </NavLink>
       <nav>
