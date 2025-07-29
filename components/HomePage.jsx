@@ -4,17 +4,18 @@ import { useNavigate } from "react-router-dom";
 function HomePage() {
 
     const [name, setName] = useState('');
+    const [error, setError] = useState('');
     const navigate = useNavigate();
     
     function handleSubmit(e) {
    e.preventDefault();
 
-
    if (name.length < 3) {
-    alert("Your name should be at least 3 characters long");
+    setError("Your name should be at least 3 characters long");
    } else {
           localStorage.setItem("userName", name);
   navigate("horoscope");
+  setError('');
    }
  }
 
@@ -28,6 +29,8 @@ function HomePage() {
      <label>Enter your name</label>
      <form onSubmit={handleSubmit} className="homepage-form">
      <input type='text' value={name} onChange={(e) => setName(e.target.value)} className="primary-input"></input>
+
+     {error && <div className="error-msg">{error}</div>}
      <button type="submit" className="primary-button">Begin</button>
      </form>
      </div>
