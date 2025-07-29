@@ -11,7 +11,7 @@ A React application for checking your daily horoscope and zodiac compatibility.
 
 ## Live demo
 
-[Demo](https://astro-state-app.netlify.app/)
+[AstroState demo](https://astro-state-app.netlify.app/)
 
 ## ⚙️ Tech Stack
 
