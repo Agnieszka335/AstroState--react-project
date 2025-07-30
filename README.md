@@ -16,6 +16,7 @@ A React application for checking your daily horoscope and zodiac compatibility.
 ## ⚙️ Tech Stack
 
 - [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/home)
 - [Vite](https://vitejs.dev/)
 - [SCSS](https://sass-lang.com/)
 - [API Ninjas Horoscope API](https://api-ninjas.com/api/horoscope)
