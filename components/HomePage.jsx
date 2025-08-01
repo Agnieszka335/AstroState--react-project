@@ -18,7 +18,7 @@ function HomePage() {
   setError('');
    }
  }
-
+ 
     return (
         <div className="container start-animation">
             <i className="fa-regular fa-star"></i>

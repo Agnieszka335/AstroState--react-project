@@ -5,11 +5,11 @@ import { useState } from "react";
 function AboutZodiac() {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisibility = (sign) => {
-    if (sign === visible) {
+  const toggleVisibility = (currentSign) => {
+    if (currentSign === visible) {
       setVisible(false);
     } else {
-      setVisible(sign);
+      setVisible(currentSign);
     }
   };
 
@@ -22,7 +22,7 @@ function AboutZodiac() {
           <div className="sign-date">{sign.date}</div>
 
           <button className="primary-button small-btn" onClick={() => toggleVisibility(sign.name)}>
-            {visible === sign.name ? "Hide description" : "Show description"}
+            {visible ? "Hide description" : "Show description"}
           </button>
 
           {visible === sign.name && (

@@ -23,10 +23,10 @@ const toggleMenu = () => {
         </NavLink>
       <nav>
         <ul className={`navigation-list ${menu ? "mobile-menu" : ""}`}>
-          <li><NavLink to="/" className="nav-link" onClick={() => setMenu(false)}>Home</NavLink></li>
-          <li><NavLink to="/horoscope" className="nav-link" onClick={() => setMenu(false)}>Daily Horoscope</NavLink></li>
-          <li><NavLink to="/compatibility" className="nav-link" onClick={() => setMenu(false)}>Compatibility</NavLink></li>
-          <li><NavLink to="/signs" className="nav-link" onClick={() => setMenu(false)}>About Signs</NavLink></li>
+          <li><NavLink to="/" className="nav-link" onClick={toggleMenu}>Home</NavLink></li>
+          <li><NavLink to="/horoscope" className="nav-link" onClick={toggleMenu}>Daily Horoscope</NavLink></li>
+          <li><NavLink to="/compatibility" className="nav-link" onClick={toggleMenu}>Compatibility</NavLink></li>
+          <li><NavLink to="/signs" className="nav-link" onClick={toggleMenu}>About Signs</NavLink></li>
         </ul>
         <button onClick={toggleMenu} className="nav-burger">
           <i className="fa-solid fa-bars"></i>

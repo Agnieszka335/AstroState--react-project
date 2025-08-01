@@ -4,7 +4,6 @@ import { useState } from "react";
 
 function Compatibility() {
 
-
   const zodiacSigns = [
   "Aries", "Taurus", "Gemini", "Cancer",
   "Leo", "Virgo", "Libra", "Scorpio",
@@ -32,6 +31,7 @@ setSign2(e.target.value);
         <div className="comp-description">Unlock the secrets of the stars ✨
           <br/> Select two zodiac signs and explore the romantic energy between them.</div>
         <article className="comp-article">
+          
             <div className="comp-zodiac">
             <span>Choose your zodiac sign</span>
         <form className="comp-form">

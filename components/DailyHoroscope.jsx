@@ -4,15 +4,14 @@ function DailyHoroscope() {
   const userName = localStorage.getItem("userName");
 
   const [horoscope, setHoroscope] = useState(null);
-  const [sign, setSign] = useState("");
+  const [sign, setSign] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (!sign) return;
     setIsLoading(true);
 
-    fetch(`https://api.api-ninjas.com/v1/horoscope?zodiac=${sign}`, {
-    })
+    fetch(`https://api.api-ninjas.com/v1/horoscope?zodiac=${sign}`)
       .then((response) => {
         if (response.ok) {
           return response.json();
